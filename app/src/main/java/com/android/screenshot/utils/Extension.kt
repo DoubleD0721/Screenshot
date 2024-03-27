@@ -8,8 +8,8 @@ import android.util.TypedValue
 import kotlin.math.roundToInt
 
 /**
- * Created by kongdebin.0721@bytedance.com on 2024/3/25
- * @author kongdebin.0721@bytedance.com
+ * Created by Debin Kong on 2024/3/25
+ * @author Debin Kong
  */
 val Context.activity: Activity?
     get() {

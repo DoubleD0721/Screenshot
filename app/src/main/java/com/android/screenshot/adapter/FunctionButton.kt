@@ -7,8 +7,8 @@ import android.widget.FrameLayout
 import com.android.screenshot.databinding.ViewFunctionItemBinding
 
 /**
- * Created by kongdebin.0721@bytedance.com on 2024/3/22
- * @author kongdebin.0721@bytedance.com
+ * Created by Debin Kong on 2024/3/22
+ * @author Debin Kong
  */
 class FunctionButton(
     context: Context,
