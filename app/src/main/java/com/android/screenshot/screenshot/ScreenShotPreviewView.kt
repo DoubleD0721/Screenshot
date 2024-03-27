@@ -20,8 +20,8 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 /**
- * Created by kongdebin.0721@bytedance.com on 2024/3/26
- * @author kongdebin.0721@bytedance.com
+ * Created by Debin Kong on 2024/3/26
+ * @author Debin Kong
  */
 class ScreenShotPreviewView(
     context: Context,

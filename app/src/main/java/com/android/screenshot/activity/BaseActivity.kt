@@ -5,8 +5,8 @@ import com.android.screenshot.utils.AppMonitor
 import com.android.screenshot.utils.Logger
 
 /**
- * Created by kongdebin.0721@bytedance.com on 2024/3/22
- * @author kongdebin.0721@bytedance.com
+ * Created by Debin Kong on 2024/3/22
+ * @author Debin Kong
  */
 abstract class BaseActivity : AppCompatActivity(), Logger {
     override fun onResume() {

@@ -3,8 +3,8 @@ package com.android.screenshot.utils
 import android.util.Log
 
 /**
- * Created by kongdebin.0721@bytedance.com on 2024/3/25
- * @author kongdebin.0721@bytedance.com
+ * Created by Debin Kong on 2024/3/25
+ * @author Debin Kong
  */
 interface Logger {
     fun tag(): String = this.javaClass.simpleName
