@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Screenshot</string>
+
+    <!-- Function Screenshot Monitor -->
+    <string name="function_start_monitor_screenshot">Start Monitor Screenshot</string>
+    <string name="function_end_monitor_screenshot">End Monitor Screenshot</string>
+    <string name="empty_path">Empty Path</string>
+</resources>
