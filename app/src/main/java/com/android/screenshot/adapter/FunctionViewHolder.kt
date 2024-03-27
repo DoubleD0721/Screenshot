@@ -9,8 +9,8 @@ import com.android.screenshot.functions.IFunction
 import com.android.screenshot.utils.Logger
 
 /**
- * Created by kongdebin.0721@bytedance.com on 2024/3/22
- * @author kongdebin.0721@bytedance.com
+ * Created by Debin Kong on 2024/3/22
+ * @author Debin Kong
  */
 class FunctionViewHolder(itemView: FunctionButton) : RecyclerView.ViewHolder(itemView), Logger {
 

@@ -5,8 +5,8 @@ import android.view.View
 import com.android.screenshot.utils.Logger
 
 /**
- * Created by kongdebin.0721@bytedance.com on 2024/3/22
- * @author kongdebin.0721@bytedance.com
+ * Created by Debin Kong on 2024/3/22
+ * @author Debin Kong
  */
 abstract class AbsFunction(
     protected val context: Context
