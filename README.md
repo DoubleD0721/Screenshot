@@ -1,14 +1,13 @@
-# Android 截屏监控
-## 前瞻
+# 前瞻
 目前Android针对截屏的监控主要有三种方式：
 
 1. 利用FileObserver监听某个目录中资源的变化
-2. 利用ContentObserbver监听全部资源的变化
+2. 利用ContentObserver监听全部资源的变化
 3. 直接监听截屏快捷键(由于不同的厂商自定义的原因，使用这种方法进行监听比较困难)
 
 本文主要使用ContentObserver的方式来实现对截屏的监控。
 
-## Android 各版本适配
+# Android 各版本适配
 主要针对Android 13及Android 14更新的存储权限进行适配。
 
 在Android 13中，存储权限从原来的`READ_EXTERNAL_STORAGE`细化成为`READ_MEDIA_IMAGES`/`READ_MEDIA_VIDEO`/`READ_MEDIA_AUDIO`三种权限，在进行权限判断的时候需要进行版本区分。
