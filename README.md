@@ -177,16 +177,12 @@ private val KEYWORDS = arrayOf(
 ##### 时间维度
 > 判断文件创建的时间是否晚于开始监听截屏的时间同时文件创建的时间和当前时间相差小于10s
 ```kotlin
-private fun isFileSizeLegal(width: Int?, height: Int?) =
-    screenRealSize?.let {
-        if (width == null || height == null) {
-            false
-        } else if (!((width <= it.x && height <= it.y) || (height <= it.x && width <= it.y))) {
-            false
-        } else {
-            true
-        }
-    } ?: false
+private fun isFileCreationTimeLegal(dateAdded: Long?, startListenTime: Long?) =
+    if (dateAdded == null
+        || startListenTime == null
+        || dateAdded / 1000 < startListenTime / 1000
+        || (System.currentTimeMillis() - dateAdded) > MAX_COST_TIME
+    ) false else true
 ```
 ##### 尺寸维度
 > 判断获取图片的大小和手机尺寸的大小是否一致
@@ -196,7 +192,6 @@ private fun isFileSizeLegal(width: Int?, height: Int?) =
         if (width == null || height == null) {
             false
         } else if (!((width <= it.x && height <= it.y) || (height <= it.x && width <= it.y))) {
-            warn { "error: size" }
             false
         } else {
             true
